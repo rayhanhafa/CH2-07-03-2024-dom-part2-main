@@ -12,12 +12,13 @@ for (let i = 0; i < drumButton.length; i++) {
         buttonAnimation(btnInnerHTML)
     });
 }
+
 //deteksi keyboard yang ditekan
 addEventListener("keypress", function (event) {
-
     makeSound(event.key)
     buttonAnimation(event.key)
 });
+
 
 function makeSound(key) {
     switch (key) {
